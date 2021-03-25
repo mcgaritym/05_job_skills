@@ -1,57 +1,8 @@
-{{cookiecutter.project_name}}
-==============================
+The purpose of this project is to examine the skills and tools desired by employers for data related jobs (i.e. *Data Analyst*, *Data Scientist*, *Data Engineer*). The motivation for the project is two-fold. First, I am personally interested in data-related careers, and the skills and tools in demand from employers. Second, while job boards are helpful in searching for jobs, there is a lack of consistency in displaying which skills/tools are desired. In other words, job boards such as Indeed and Linkedin do not have any filtering functions or ways to aggregate by skills/tools mentioned in the job advertisement. There is usually filtering functions for location, seniority, industry, etc but the filtering does not go down to the necessary level of detail for skills/tools. Furthermore, job announcements are inconsistent on where they place the text for required skills/tools. Sometimes, it is under 'Qualifications', 'Requirements', 'Skills', 'Responsibilities', or other sections. Thus, it is necessary to do some level of web scraping and text preprocessing prior to analysis.  
 
-{{cookiecutter.description}}
-
-Project Organization
-------------
-
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
-
-
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+This project will try to answer these questions:
+- What tools/skills are most in demand for a Data Analyst?
+- What tools/skills are most in demand for a Data Engineer?
+- What tools/skills are most in demand for a Data Scientist?
+- Which companies post the most data-related job openings?
+- Can a classifier be built which predicts job role/title (Data Analyst, Data Engineer or Data Scientist) based on job description?
